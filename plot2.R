@@ -48,7 +48,7 @@ if (file.exists("power.txt")){
 }
 
 #########
-# Plot 1
+# Plot 2
 #########
 png("plot2.png",width=480,height=480)
 with(power,

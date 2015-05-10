@@ -18,11 +18,11 @@ with(power,
      plot(Global_active_power ~ Time,
           type="l",
           ylab="Global Active Power",
-          xlab="datetime")
+          xlab = "")
 )
 
 # graph (2,1)
-with(power, plot( Sub_metering_1 ~ Time, type="n", ylab="Energy Sub Metering", xlab="datetime"))
+with(power, plot( Sub_metering_1 ~ Time, type="n", ylab="Energy sub metering", xlab=""))
 with(power, lines(Sub_metering_1 ~ Time, col="black"))
 with(power, lines(Sub_metering_2 ~ Time, col="red"))
 with(power, lines(Sub_metering_3 ~ Time, col="blue"))
@@ -45,7 +45,6 @@ with(power,
 with(power,
      plot(Global_reactive_power ~ Time,
           type="l",
-          ylab="Global Reactive Power",
           xlab="datetime")
 )
 dev.off()
